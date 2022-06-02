@@ -4,7 +4,7 @@ let random = getRandom(0,100);
 console.log(random)
 
 
-guess()
+// guess()
 function guess(){
     let num = parseInt(prompt("猜猜看" + min + "-" + max));
     if(isNaN(num)){
@@ -22,7 +22,7 @@ function guess(){
     }else if(num < random){
         min = num;
         guess()
-    }else if(num == random){
+    }else if(num === random){
         alert("恭喜 猜對了");
     }
 }
@@ -30,6 +30,5 @@ function guess(){
 function getRandom(min,max){
     return Math.floor(Math.random()*(max-min+1))+min;
 };
-
 
 
