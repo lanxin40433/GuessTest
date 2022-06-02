@@ -139,6 +139,9 @@ function checkGuess(){
         dialogTitel.textContent = "Guessed it right!";
         dialog.showModal();
         guessBtn.removeEventListener("click", checkGuess);
+        document.querySelector('.roundCakeRightBottom').style.filter = 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))';
+        document.querySelector('.circleRightBottom svg use').href.baseVal = './svg.svg#chick' ;
+        document.querySelector('.circleRightBottom').style.filter = 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))';
         return;
     }
 
