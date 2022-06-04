@@ -54,7 +54,7 @@
     </symbol>
 
     <symbol id="chick" width="193" height="219" viewBox="0 0 193 219">
-        <circle cx="150.5" cy="150.5" r="150.5" fill="#5E5C5C" fill-opacity="0.4"/>
+        <circle cx="150.5" cy="150.5" r="150.5" style="fill:var(--color, #5e5c5c66)" fill-opacity="0.4"/>
         <path style="filter: drop-shadow(0px 4px 1px rgba(0, 0, 0, 0.25));" d="M146.44 108.156C149.2 110.451 143.28 122.123 133.217 134.226C123.154 146.329 112.758 154.28 109.998 151.985C107.238 149.689 113.158 138.017 123.221 125.914C133.284 113.811 143.68 105.861 146.44 108.156Z" fill="#FEEBCF"/>
         <circle cx="118" cy="62" r="5" fill="#161515"/>
         <circle cx="62" cy="135" r="5" fill="#161515"/>

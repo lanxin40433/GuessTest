@@ -137,9 +137,9 @@ function checkGuess(){
 
     if(guessValue === random) {
         guessBtn.removeEventListener("click", checkGuess);
-        document.querySelector('.roundCakeRightBottom').style.filter = 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))';
+        document.querySelector('.roundCakeRightBottom').classList.add('chickHair');
         document.querySelector('.circleRightBottom svg use').href.baseVal = './svg.svg#chick' ;
-        document.querySelector('.circleRightBottom').style.filter = 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))';
+        document.querySelector('.circleRightBottom').classList.add('chickBody');
         
 
         guess.innerHTML = `
@@ -165,6 +165,9 @@ function checkGuess(){
 function again(){
     document.querySelector(".guess").style="display:block;";
     guess.innerHTML = '';
+    document.querySelector('.roundCakeRightBottom').classList.remove('chickHair');
+    document.querySelector('.circleRightBottom svg use').href.baseVal = './svg.svg#circleCutDown' ;
+    document.querySelector('.circleRightBottom').classList.remove('chickBody');
     okBtn.addEventListener("click", checkScopeValue);
     // location.reload()
 }
