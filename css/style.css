@@ -55,7 +55,7 @@ body,html{
 
 .chickHair{
     --color: #f8f887;
-    animation: 3.5s forwards chickHair;
+    animation: 2.5s forwards chickHair;
     /* animation-duration: 3.5s;
     animation-name: chickHair;
     animation-fill-mode: forwards; */
@@ -80,7 +80,7 @@ body,html{
 
 .chickBody{
     --color: #f8f887;
-    animation: 3.5s forwards chickBody;
+    animation: 2.5s forwards chickBody;
 }
 
 @keyframes chickBody {
