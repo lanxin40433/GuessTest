@@ -163,7 +163,10 @@ function checkGuess(){
 
 
 function again(){
-    location.reload()
+    document.querySelector(".guess").style="display:block;";
+    guess.innerHTML = '';
+    okBtn.addEventListener("click", checkScopeValue);
+    // location.reload()
 }
 
 function getRandom(min,max){
